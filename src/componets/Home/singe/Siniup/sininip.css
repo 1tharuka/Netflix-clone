@@ -1,0 +1,107 @@
+.siniup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.black__sinup{
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.863);
+    width: 500px;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff ;
+    z-index: 1;
+    padding: 2rem;
+    h1{
+        font-size: 40px;
+    }
+}
+.forme__cols{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    input{
+        width: 180%;
+        height: 60px;
+        margin-top: 30px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        text-align: center;
+    }
+    button{
+        width: 180%;
+        height: 50px;
+        background:  rgb(211, 16, 16);
+        color: white;
+        font-size: 25px;
+        border: none;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+}
+h4{
+    font-size: 23px;
+}
+span{
+    color: rgb(155, 149, 149);
+    margin-right: 10px;
+}
+a{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+@media(max-width:800px){
+    .black__sinup{
+        height: 70%;
+        width: 370px;
+        h1{
+            font-size: 30px;
+        }
+        .forme__cols{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            input{
+                width: 130%;
+                height: 60px;
+                margin-top: 30px;
+            }
+            button{
+                width: 130%;
+               
+                font-size: 25px;
+              
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+
+}
+@media(max-width:430px){
+    .forme__cols{
+      
+        gap: 30px;
+        input{
+            width: 100px;
+            height: 60px;
+            margin-top: 30px;
+        }
+        button{
+            width: 50%;
+           
+            font-size: 25px;
+          
+            margin-bottom: 20px;
+        }
+    }
+
+}

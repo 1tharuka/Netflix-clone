@@ -1,0 +1,135 @@
+.singe{
+    position: relative;
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/4f/8d/44/4f8d44dafa45c4f697fa1c85f046f1e3.jpg");
+    object-fit: contain;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    opacity: 0.7;
+    z-index: 0;
+    
+
+}
+.singe__nav{
+ margin-top:10px ;
+  position: fixed;
+  left: 0;
+  width: 150px;
+  padding-left: 20px; 
+  object-fit: contain;
+  z-index: 1;
+  img{
+    margin-top: 10px;
+    width: 150px;
+    cursor: pointer;
+  }
+}
+.loging__button{
+    padding: 10px 1rem;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background: rgb(211, 16, 16);
+    cursor: pointer;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: -20;
+}
+.forme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    color: white;
+    h1{
+        font-size: 40px;
+        margin-top: 20px;
+        font-weight: 700;
+    }
+    h3{
+        font-size: 35px;
+        margin-top: 5px;
+        font-weight: 500;
+    }
+    P{
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: 300;  
+    }
+}
+.input__frome{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    input{
+        padding: 15px 4rem;
+        font-size: 20px;
+        outline: none;
+        border: none;
+    }
+    button{
+        padding: 15px 1.5rem;
+        font-size: 20px;
+        border: none;
+        color: white;
+        background: rgb(211, 16, 16);
+        cursor: pointer;
+    }
+}
+@media(max-width:800px){
+    .input__frome{
+        flex-direction: column;
+        gap: 5px;
+        input{
+            padding: 0.5rem 2rem;
+            font-size: 20px;
+          
+        }
+        button{
+            padding: 0.5rem 1rem;
+            font-size: 20px;
+           
+        }
+    }
+    .loging__button{
+        top:10px ;
+        position: fixed;
+        right:20px;
+        padding: 0.8rem 1.5rem;
+        font-size: 25px;
+     
+    }
+    .forme{
+       
+        h1{
+            font-size: 30px;
+            margin-top: 20px;;
+        }
+        h3{
+            font-size: 25px;
+            margin-top: 5px;
+        }
+        P{
+            font-size: 15px;
+            margin-top: 10px; 
+        }
+    }
+    .loging__button{
+        top:10px ;
+        padding: 0.4rem 0.9rem;
+        font-size: 20px;
+  
+    }
+    .singe__nav{
+        img{
+            width: 150px;
+        }
+    }
+}
